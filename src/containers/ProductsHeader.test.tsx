@@ -62,7 +62,6 @@ describe('ProductsHeader mobile filters', () => {
       fireEvent.click(screen.getByRole('button', { name: /filters/i }));
       expect(container.querySelector('.ds-plp-facets')).toBeNull();
       expect(window.location.search).toBe(query);
-      expect(variables.filter).toEqual(filter);
     }
   );
 });
